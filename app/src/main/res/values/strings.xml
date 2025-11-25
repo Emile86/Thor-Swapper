@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Thor Swapper</string>
+    <string name="accessibility_service_description">Allows you to move apps between screens with swipe gesture.</string>
+</resources>

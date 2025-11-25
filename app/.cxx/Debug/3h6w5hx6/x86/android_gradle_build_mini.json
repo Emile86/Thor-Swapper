@@ -1,0 +1,27 @@
+{
+  "buildFiles": [
+    "C:\\Users\\Emile\\AndroidStudioProjects\\ThorSwapper\\app\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\Emile\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "C:\\Users\\Emile\\AndroidStudioProjects\\ThorSwapper\\app\\.cxx\\Debug\\3h6w5hx6\\x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\Emile\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "C:\\Users\\Emile\\AndroidStudioProjects\\ThorSwapper\\app\\.cxx\\Debug\\3h6w5hx6\\x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "thorswapper::@6890427a1f51a3e7e1df": {
+      "artifactName": "thorswapper",
+      "abi": "x86",
+      "output": "C:\\Users\\Emile\\AndroidStudioProjects\\ThorSwapper\\app\\build\\intermediates\\cxx\\Debug\\3h6w5hx6\\obj\\x86\\libthorswapper.so",
+      "runtimeFiles": []
+    }
+  }
+}

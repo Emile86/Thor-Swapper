@@ -1,0 +1,13 @@
+# ninja log v5
+1	743	7856453391259996	CMakeFiles/thorswapper.dir/native-lib.cpp.o	f7ff26ea23ce41e0
+749	838	7856453392239362	C:/Users/Emile/AndroidStudioProjects/ThorSwapper/app/build/intermediates/cxx/Debug/3h6w5hx6/obj/arm64-v8a/libthorswapper.so	9d65dc605396e14b
+4	822	7856455858691887	CMakeFiles/thorswapper.dir/native-lib.cpp.o	f7ff26ea23ce41e0
+823	973	7856455860216223	C:/Users/Emile/AndroidStudioProjects/ThorSwapper/app/build/intermediates/cxx/Debug/3h6w5hx6/obj/arm64-v8a/libthorswapper.so	9d65dc605396e14b
+6	829	7856456995831952	CMakeFiles/thorswapper.dir/native-lib.cpp.o	f7ff26ea23ce41e0
+830	940	7856456996978206	C:/Users/Emile/AndroidStudioProjects/ThorSwapper/app/build/intermediates/cxx/Debug/3h6w5hx6/obj/arm64-v8a/libthorswapper.so	9d65dc605396e14b
+4	798	7856457896819797	CMakeFiles/thorswapper.dir/native-lib.cpp.o	f7ff26ea23ce41e0
+799	954	7856457898372842	C:/Users/Emile/AndroidStudioProjects/ThorSwapper/app/build/intermediates/cxx/Debug/3h6w5hx6/obj/arm64-v8a/libthorswapper.so	9d65dc605396e14b
+4	822	7856458980977617	CMakeFiles/thorswapper.dir/native-lib.cpp.o	f7ff26ea23ce41e0
+823	935	7856458982144670	C:/Users/Emile/AndroidStudioProjects/ThorSwapper/app/build/intermediates/cxx/Debug/3h6w5hx6/obj/arm64-v8a/libthorswapper.so	9d65dc605396e14b
+7	803	7856463282030622	CMakeFiles/thorswapper.dir/native-lib.cpp.o	f7ff26ea23ce41e0
+804	914	7856463283175863	C:/Users/Emile/AndroidStudioProjects/ThorSwapper/app/build/intermediates/cxx/Debug/3h6w5hx6/obj/arm64-v8a/libthorswapper.so	9d65dc605396e14b

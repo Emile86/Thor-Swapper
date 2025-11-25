@@ -1,0 +1,1 @@
+C:\Users\Emile\AndroidStudioProjects\ThorSwapper\app\src\main\cpp\CMakeLists.txt

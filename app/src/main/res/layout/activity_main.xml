@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_background"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/surface_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/statusText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Daemon: STOPPED"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/red_error"
+                    android:layout_marginBottom="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btnStartDaemon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Start"
+                        android:backgroundTint="#4CAF50"
+                        android:textColor="@color/white"
+                        android:layout_marginEnd="8dp" />
+
+                    <Button
+                        android:id="@+id/btnStopDaemon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Stop"
+                        android:backgroundTint="#F44336"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="8dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Restart Daemon to apply changes."
+                    android:textAlignment="center"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchAutoStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Auto-start on Boot"
+                    android:textColor="@color/text_primary"
+                    android:textSize="16sp"
+                    android:layout_marginTop="12dp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gesture Settings"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/text_secondary"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="@color/surface_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fingers Required"
+                    android:textColor="@color/text_primary"
+                    android:textSize="14sp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupFingers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="12dp">
+                    
+                    <RadioButton
+                        android:id="@+id/radio2Fingers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 Fingers"
+                        android:textColor="@color/text_primary"
+                        android:buttonTint="@color/purple_200"
+                        android:layout_marginEnd="16dp"/>
+                    <RadioButton
+                        android:id="@+id/radio3Fingers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 Fingers" 
+                        android:checked="true"
+                        android:textColor="@color/text_primary"
+                        android:buttonTint="@color/purple_200"
+                        android:layout_marginEnd="16dp"/>
+                    <RadioButton
+                        android:id="@+id/radio4Fingers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 Fingers"
+                        android:buttonTint="@color/purple_200"
+                        android:textColor="@color/text_primary" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Top Sensitivity"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginTop="8dp"/>
+                <TextView
+                    android:id="@+id/textThresholdTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="300 px"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold"/>
+                <SeekBar
+                    android:id="@+id/seekBarThresholdTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="1000"
+                    android:progress="300" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bottom Sensitivity"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginTop="8dp"/>
+                <TextView
+                    android:id="@+id/textThresholdBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="300 px"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold"/>
+                <SeekBar
+                    android:id="@+id/seekBarThresholdBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="1000"
+                    android:progress="300" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buttons"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/text_secondary"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="@color/surface_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="12dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Home Long Press (Recents)"
+                        android:textColor="@color/text_primary"
+                        android:textSize="16sp" />
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switchHomeLongPress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_primary"
+                    android:text="Swap Cooldown (Delay)" />
+                <TextView
+                    android:id="@+id/textCooldown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1000 ms"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold"/>
+                <SeekBar
+                    android:id="@+id/seekBarCooldown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="3000"
+                    android:min="500"
+                    android:progress="1000" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        
+        <Button
+            android:id="@+id/btnAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About Application"
+            android:backgroundTint="@color/purple_200"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:cornerRadius="12dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"/>
+            
+    </LinearLayout>
+</ScrollView>
