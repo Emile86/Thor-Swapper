@@ -13,7 +13,7 @@ Swipe UP on the Bottom Screen to bring the app to the top.
 
 Physical Button Shortcuts: Long-press the physical HOME button to instantly open the Recent Apps overview, solving navigation issues in full-screen mode.
 
-## Key Features:
+## Features:
 
 * 🚀 Instant Swapping: Move apps between screens with zero lag and a slick dark animation.
 
@@ -27,4 +27,7 @@ Physical Button Shortcuts: Long-press the physical HOME button to instantly open
 
 \
 ⚠️ **IMPORTANT REQUIREMENT:** This application REQUIRES ROOT ACCESS (Magisk) to function. It needs elevated privileges to intercept raw touch events and manage system windows aggressively. It will not work on unrooted devices. To root your device you can use [o2ptweaks.app](https://github.com/FeralAI/o2ptweaks.app)
+
+\
+<img width="556" height="426" alt="image" src="https://github.com/user-attachments/assets/bd3159c2-fead-4bf4-85a4-0cd501790712" />
 
